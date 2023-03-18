@@ -1,17 +1,18 @@
 #include <stdio.h>
+
 /**
-  *main - Entry point
-  *Description: 'print alphabits lowercase'
-  */
+ * main - prints the alphabet in lowercase,
+ * followed by a new line
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	int n = 97;
+	char ch;
 
-	while (n <= 122)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		putchar(n);
-		n++;
+		putchar(ch);
 	}
-		putchar('\n');
-		return (0);
+	putchar('\n');
+	return (0);
 }

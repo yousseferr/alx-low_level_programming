@@ -1,22 +1,22 @@
 #include <stdio.h>
+
 /**
-*main - Entry point
-*Description: 'print alphabets and numbres of base 16'
-*Return: always 0
-*/
+ * main - prints all possible combinations of single-digit numbers
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
-	int m;
 
-	for (n = 48; n <= 57; n++)
+	for (n = 48; n < 58; n++)
 	{
 		putchar(n);
+		if (n != 57)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
-	for (m = 97; m <= 102; m++)
-	{
-		putchar(m);
-	}
-
+	putchar('\n');
 	return (0);
 }
